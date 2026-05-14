@@ -230,3 +230,40 @@
   .score-big { font-size: 42px; }
   .role-name { font-size: 20px; }
 }
+
+@media (min-width: 1024px) {
+  .logo { font-size: 22px; letter-spacing: 4px; }
+  .nav-btn { font-size: 13px; padding: 9px 18px; }
+
+  .system-tag { font-size: 12px; }
+  .landing-title { font-size: 64px; }
+  .landing-sub { font-size: 15px; max-width: 460px; }
+
+  .card-num { font-size: 12px; }
+  .card-title { font-size: 22px; }
+  .card-desc { font-size: 14px; line-height: 1.75; }
+  .card-cta { font-size: 13px; }
+
+  .panel-label { font-size: 12px; }
+  .field-label { font-size: 12px; }
+  .upload-title { font-size: 16px; }
+  .upload-hint { font-size: 12px; }
+
+  .input-area { font-size: 14px; height: 110px; }
+  .action-btn { font-size: 14px; padding: 16px; }
+
+  .score-big { font-size: 72px; }
+  .score-sub { font-size: 12px; }
+
+  .skills-label { font-size: 12px; }
+  .tag { font-size: 12px; padding: 5px 12px; }
+
+  .role-lbl { font-size: 12px; }
+  .role-name { font-size: 36px; }
+
+  .job-title-text { font-size: 15px; }
+  .job-meta { font-size: 12px; }
+  .apply-btn { font-size: 12px; padding: 8px 16px; }
+
+  .error-text { font-size: 13px; }
+}
