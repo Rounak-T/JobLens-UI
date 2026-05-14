@@ -45,8 +45,8 @@ function AnalysisPage() {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <NavBar showLinks current="analysis" />
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", flex: 1 }}>
-        <div style={{ padding: 28, borderRight: "1px solid #1e1e1e" }}>
+      <div className="split-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", flex: 1 }}>
+        <div className="split-pane split-pane-left" style={{ padding: 28, borderRight: "1px solid #1e1e1e" }}>
           <div className="panel-label">01 — Input</div>
           <UploadZone file={file} onFile={setFile} />
           <label className="field-label">Job Description</label>
@@ -61,7 +61,7 @@ function AnalysisPage() {
           </button>
           {error && <div className="error-text">{error}</div>}
         </div>
-        <div style={{ padding: 28, background: "#080808" }}>
+        <div className="split-pane" style={{ padding: 28, background: "#080808" }}>
           <div className="panel-label">02 — Output</div>
           {!result ? (
             <div style={{ fontSize: 10, color: "#444", letterSpacing: 1, padding: 40, textAlign: "center", border: "1px dashed #1e1e1e", borderRadius: 4 }}>
