@@ -76,12 +76,12 @@
     50% { opacity: 0.2; }
   }
   .nav-btn {
-    padding: 6px 14px;
+    padding: 7px 14px;
     border: 1px solid #333;
     background: transparent;
     font-family: 'Space Mono', monospace;
-    font-size: 10px;
-    color: #888;
+    font-size: 11px;
+    color: #aaa;
     cursor: pointer;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -89,6 +89,7 @@
     border-radius: 2px;
     text-decoration: none;
     display: inline-block;
+    white-space: nowrap;
   }
   .nav-btn:hover { border-color: #f0f0f0; color: #f0f0f0; }
 
