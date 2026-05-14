@@ -72,10 +72,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Resumatch" },
+      { title: "Joblens" },
       { name: "description", content: "AI resume matcher and role predictor." },
-      { name: "author", content: "Resumatch" },
-      { property: "og:title", content: "Resumatch" },
+      { name: "author", content: "Joblens" },
+      { property: "og:title", content: "Joblens" },
       { property: "og:description", content: "AI resume matcher and role predictor." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

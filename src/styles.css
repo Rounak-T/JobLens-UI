@@ -229,6 +229,9 @@
   .landing-title { font-size: 34px; }
   .score-big { font-size: 42px; }
   .role-name { font-size: 20px; }
+  .split-grid { grid-template-columns: 1fr !important; }
+  .split-pane { padding: 20px !important; }
+  .split-pane-left { border-right: none !important; border-bottom: 1px solid #1e1e1e; }
 }
 
 @media (min-width: 1024px) {
