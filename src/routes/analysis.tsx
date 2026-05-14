@@ -8,7 +8,7 @@ export const Route = createFileRoute("/analysis")({
   component: AnalysisPage,
   head: () => ({
     meta: [
-      { title: "Resume Analysis — Resumatch" },
+      { title: "Resume Analysis — Joblens" },
       { name: "description", content: "Score your resume against any job description and see matched/missing skills." },
     ],
   }),

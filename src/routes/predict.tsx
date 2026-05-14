@@ -8,7 +8,7 @@ export const Route = createFileRoute("/predict")({
   component: PredictPage,
   head: () => ({
     meta: [
-      { title: "Predict Role — Resumatch" },
+      { title: "Predict Role — Joblens" },
       { name: "description", content: "Detect your best-fit role and discover live job openings." },
     ],
   }),

@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "Resumatch — AI Resume Matcher" },
+      { title: "Joblens — AI Resume Matcher" },
       { name: "description", content: "Upload your resume. Score it against a JD or detect your best role." },
     ],
   }),
@@ -24,12 +24,12 @@ function Landing() {
         <div className="system-tag">SYSTEM · READY</div>
 
         <h1 className="landing-title">
-          RESUME<br />
-          <span className="dot-accent">///</span> MATCHER
+          JOB<br />
+          <span className="dot-accent">///</span> LENS
         </h1>
         <p className="landing-sub">
           UPLOAD YOUR RESUME.<br />
-          LET AI DO THE REST.
+          SEE YOUR NEXT MOVE.
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, width: "100%", maxWidth: 560 }}>
