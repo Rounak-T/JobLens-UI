@@ -30,11 +30,13 @@ function PredictPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<Result | null>(null);
+  const [showJobs, setShowJobs] = useState(false);
 
   const run = async () => {
     if (!file) { setError("Resume required."); return; }
     setError(null);
     setLoading(true);
+    setShowJobs(false);
     try {
       const data = await postPredictRole(file);
       setResult(data);
@@ -69,11 +71,19 @@ function PredictPage() {
                 <div className="role-lbl">Detected Role</div>
                 <div className="role-name">{result.predicted_role}</div>
               </div>
-              <div className="skills-label">Live Jobs</div>
-              {(!result.jobs || result.jobs.length === 0) && (
-                <div style={{ fontSize: 10, color: "#444", padding: 12 }}>// no jobs found</div>
+              {!showJobs ? (
+                <button className="action-btn" onClick={() => setShowJobs(true)}>
+                  → View Jobs
+                </button>
+              ) : (
+                <>
+                  <div className="skills-label">Live Jobs</div>
+                  {(!result.jobs || result.jobs.length === 0) && (
+                    <div style={{ fontSize: 10, color: "#444", padding: 12 }}>// no jobs found</div>
+                  )}
+                </>
               )}
-              {result.jobs?.map((j, i) => {
+              {showJobs && result.jobs?.map((j, i) => {
                 const title = pickField(j, ["title", "job_title", "Title", "name"]) ?? "Role";
                 const company = pickField(j, ["company", "Company", "employer"]);
                 const location = pickField(j, ["location", "Location", "city"]);
