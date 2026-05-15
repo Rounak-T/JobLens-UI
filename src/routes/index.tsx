@@ -21,15 +21,15 @@ function Landing() {
         <div className="corner-mark bl" />
         <div className="corner-mark br" />
 
-        <div className="system-tag">SYSTEM · READY</div>
+        <div className="system-tag">GET · READY</div>
 
         <h1 className="landing-title">
           JOB<br />
           <span className="dot-accent">///</span> LENS
         </h1>
         <p className="landing-sub">
-          UPLOAD YOUR RESUME.<br />
-          SEE YOUR NEXT MOVE.
+          YOUR RESUME HAS A STORY.<br />
+          LET'S READ IT TOGETHER.
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, width: "100%", maxWidth: 560 }}>

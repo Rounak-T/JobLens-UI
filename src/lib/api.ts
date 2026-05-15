@@ -1,4 +1,4 @@
-const DEFAULT_API = "http://127.0.0.1:8000";
+const DEFAULT_API = import.meta.env.VITE_API_URL;
 
 export function getApiBase(): string {
   if (typeof window === "undefined") return DEFAULT_API;
