@@ -1,6 +1,6 @@
 # Joblens
 
-> **See your next move.** AI-powered resume matcher and role predictor with a terminal-inspired Nothing OS aesthetic.
+**AI-powered resume matcher and role predictor**
 
 Joblens reads your resume and tells you two things: how well you match a specific job, and what role you should actually be aiming for. Upload a PDF, get instant skill-gap analysis or a predicted role with live openings.
 
@@ -12,7 +12,7 @@ Joblens reads your resume and tells you two things: how well you match a specifi
 - **Predict My Role** — Let the AI detect your best-fit job role based on your resume, then surface live job openings matched to your profile.
 - **One-click Apply** — Jump straight from a recommended job to its application page.
 - **Responsive** — Clean split-pane layout on laptops, stacked layout on phones — no broken UI when results come in.
-- **Nothing OS vibe** — Monospace typography, dot-matrix accents, high-contrast dark UI.
+- **Minimal Interface** — Monospace typography, dot-matrix accents, high-contrast dark UI.
 
 ---
 
